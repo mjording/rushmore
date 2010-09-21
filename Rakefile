@@ -8,7 +8,7 @@ begin
     gem.summary = %Q{TODO: one-line summary of your gem}
     gem.description = %Q{extends rush, the ruby shell, for system configuration, and application deployment}
     gem.email = "mjording@opengotham.com"
-    gem.homepage = "http://github.com/opengotham/rushmore"
+    gem.homepage = "git@github.com:mjording/rushmore.git"
     gem.authors = ["matthew jording"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
