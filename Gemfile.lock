@@ -36,9 +36,12 @@ GEM
     rspec-expectations (2.1.0)
       diff-lcs (~> 1.1.2)
     rspec-mocks (2.1.0)
+    rushmore (0.0.8)
+      thor
     session (3.1.0)
       fattr
     term-ansicolor (1.0.5)
+    thor (0.14.6)
     yard (0.6.3)
 
 PLATFORMS
@@ -51,4 +54,5 @@ DEPENDENCIES
   rcov
   rspec (~> 2.1.0)
   rush!
+  rushmore
   yard (~> 0.6.0)

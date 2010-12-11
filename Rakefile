@@ -18,7 +18,10 @@ Jeweler::Tasks.new do |gem|
   gem.email = "mjording@opengotham.com"
   gem.homepage = "http://rushmore.failless.com"
   gem.license = "GPL-3"
+  gem.add_development_dependency "rspec"
+  gem.add_development_dependency "yard", ">= 0"
   gem.add_dependency 'thor'
+  gem.add_dependency 'open3'
   gem.authors = ["mjording"]
   gem.files = Dir.glob('lib/**/*.rb')
   gem.executables = %w(rushmore)
@@ -28,7 +31,7 @@ Jeweler::Tasks.new do |gem|
 end
 Jeweler::RubygemsDotOrgTasks.new
 
-require 'rspec/core'
+require 'rspec'
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:spec) do |spec|
   spec.pattern = FileList['spec/**/*_spec.rb']
@@ -41,6 +44,7 @@ end
 
 require 'cucumber/rake/task'
 Cucumber::Rake::Task.new(:features)
+
 
 task :default => :spec
 

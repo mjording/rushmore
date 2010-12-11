@@ -1,19 +1,18 @@
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
-$LOAD_PATH.unshift(File.dirname(__FILE__))
-require 'fileutils'
+$:.unshift File.expand_path('..', __FILE__)
+$:.unshift File.expand_path('../../lib', __FILE__)
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.
-Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 
 
-require 'rushmore_spec'
+# require 'rushmore_spec'
+require 'fileutils'
 require 'rushmore'
+require 'rspec'
+require 'open3'
 
 
-RSpec.configure do |config|
-  config.include Spec::Helpers
-  
-  
-  
-end
+
+
+# Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
+

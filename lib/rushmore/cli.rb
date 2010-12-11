@@ -23,29 +23,20 @@ module Rushmore
       deploy deploys the project at working directory to a specified server.
     D
     
-    method_option "server", :type => :string, :banner =>
-        "specification for server. defaults to specification in ./config/deploy"
-    method_option "groups", :type => :string, :banner =>
-        "filtered groups for configuration, defaults to production"
-
+    # method_option "server", :type => :string, :banner =>
+    #        "specification for server. defaults to specification in ./config/deploy"
+    #    method_option "groups", :type => :string, :banner =>
+    #        "filtered groups for configuration, defaults to production"
+   
     def deploy
       
       opts = options.dup
-      opts[:server] ||= '127.0.0.1'
-      opts[:groups] ||= 'production'
-      
+      # opts[:server] ||= '127.0.0.1'
+      #       opts[:groups] ||= 'production'
+      #       
       Rushmore.ui.info "rushmore rockin like lincoln"
-      # Rushmore.ui.info "we have setting #{Rushmore.settings.class}"
       
-      if opts.empty?
-         Rushmore.ui.info "keep it then"
-       else
-         Rushmore.ui.info "#{Rushmore.class} already exists at #{Dir.pwd}"
-      end
     end
-    def self.source_root
-      File.expand_path(File.join(File.dirname(__FILE__), '..'))
-    end
-
+   
   end
 end
