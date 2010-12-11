@@ -34,7 +34,7 @@ module Rushmore
       opts[:server] ||= '127.0.0.1'
       opts[:groups] ||= 'production'
       
-      Rushmore.ui.info "in the deploy at least"
+      Rushmore.ui.info "rushmore rockin like lincoln"
       # Rushmore.ui.info "we have setting #{Rushmore.settings.class}"
       
       if opts.empty?
