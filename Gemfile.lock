@@ -1,0 +1,54 @@
+GIT
+  remote: http://github.com/mjording/rush.git
+  revision: 0388f726b82f45e23c6c98c2e2c5722c923c9634
+  specs:
+    rush (0.6.6)
+      session
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    builder (3.0.0)
+    cucumber (0.10.0)
+      builder (>= 2.1.2)
+      diff-lcs (~> 1.1.2)
+      gherkin (~> 2.3.2)
+      json (~> 1.4.6)
+      term-ansicolor (~> 1.0.5)
+    diff-lcs (1.1.2)
+    fattr (2.1.0)
+    gherkin (2.3.2)
+      json (~> 1.4.6)
+      term-ansicolor (~> 1.0.5)
+    git (1.2.5)
+    jeweler (1.5.1)
+      bundler (~> 1.0.0)
+      git (>= 1.2.5)
+      rake
+    json (1.4.6)
+    rake (0.8.7)
+    rcov (0.9.9)
+    rspec (2.1.0)
+      rspec-core (~> 2.1.0)
+      rspec-expectations (~> 2.1.0)
+      rspec-mocks (~> 2.1.0)
+    rspec-core (2.1.0)
+    rspec-expectations (2.1.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.1.0)
+    session (3.1.0)
+      fattr
+    term-ansicolor (1.0.5)
+    yard (0.6.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.0.0)
+  cucumber
+  jeweler (~> 1.5.1)
+  rcov
+  rspec (~> 2.1.0)
+  rush!
+  yard (~> 0.6.0)
