@@ -20,6 +20,7 @@ Jeweler::Tasks.new do |gem|
   gem.license = "GPL-3"
   gem.summary = %Q{monumental provisioning and deployment}
   gem.description = %Q{TODO: longer description of your gem}
+  gem.add_dependency 'thor'
   gem.email = "mjording@opengotham.com"
   gem.authors = ["mjording"]
   # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
