@@ -14,4 +14,4 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2010 matthew jording. See LICENSE for details.
+GPL v3 (ɔ)  2010 matthew jording. See LICENSE for details.
