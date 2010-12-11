@@ -1,8 +1,14 @@
 #!/usr/bin/env ruby
+$LOAD_PATH.unshift File.dirname(__FILE__) + '/../lib'  
 
-#!/usr/bin/env ruby
-$LOAD_PATH.unshift File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib')) do
-  require 'rushmore'
-end
 require 'rushmore'
 require 'rushmore/cli'
+
+begin
+  Rushmore::CLI.start
+rescue Exception => e
+  Rushmore.ui.error e.backtrace.first
+rescue Interrupt
+  Rushmore.ui.error "\nQuitting..."
+  exit 1
+end

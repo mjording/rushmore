@@ -13,16 +13,17 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   gem.name = "rushmore"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{extends rush, the ruby shell, for system configuration, and application deployment}
+  gem.summary = %Q{monumental provisioning and deploy tool}
+  gem.description = %Q{monumental provisioning and deploy tool. Extends rush, the ruby shell, for system configuration, and application deployment}
   gem.email = "mjording@opengotham.com"
   gem.homepage = "http://rushmore.failless.com"
   gem.license = "GPL-3"
-  gem.summary = %Q{monumental provisioning and deployment}
-  gem.description = %Q{TODO: longer description of your gem}
   gem.add_dependency 'thor'
-  gem.email = "mjording@opengotham.com"
   gem.authors = ["mjording"]
+  gem.files = Dir.glob('lib/**/*.rb')
+  gem.executables = %w(rushmore)
+  gem.default_executable = "rushmore"
+  gem.require_paths = ["lib"]
   # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
 end
 Jeweler::RubygemsDotOrgTasks.new

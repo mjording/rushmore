@@ -1,5 +1,7 @@
 = rushmore
 
+monumental provisioning and deploy tool
+
 Description goes here.
 
 == Note on Patches/Pull Requests
